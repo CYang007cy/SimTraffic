@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-09-27T23:18:31.707295+08:00 by Eclipse SUMO GUI 1.27.1
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\Lenovo\Desktop\交通大模型项目\sumu仿真\RESCO\resco_benchmark\environments\grid3x3\grid3x3.net.xml"/>
+        <route-files value="C:\Users\Lenovo\Desktop\交通大模型项目\sumu仿真\RESCO\resco_benchmark\environments\grid3x3\5a9fe698-4aa5-4c34-92cb-226134da347b.rou.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="C:\Users\Lenovo\Desktop\交通大模型项目\sumu仿真\RESCO\results\grid3x3+fixed_libsumo@False_gui@True_f7f761f2\git_FINAL\5a9fe698-4aa5-4c34-92cb-226134da347b\tripinfo_1.xml"/>
+        <tripinfo-output.write-unfinished value="True"/>
+        <tripinfo-output.write-undeparted value="True"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <extrapolate-departpos value="True"/>
+        <time-to-teleport value="-1"/>
+        <eager-insert value="true"/>
+    </processing>
+
+    <report>
+        <no-warnings value="True"/>
+        <no-step-log value="True"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="52261"/>
+    </traci_server>
+
+    <random_number>
+        <random value="True"/>
+    </random_number>
+
+</sumoConfiguration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+</tripinfos>

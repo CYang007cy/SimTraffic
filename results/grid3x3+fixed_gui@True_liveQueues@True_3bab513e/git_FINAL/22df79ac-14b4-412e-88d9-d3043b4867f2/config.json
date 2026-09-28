@@ -1,0 +1,741 @@
+{
+    "colors_map": {
+        "Max Pressure": "C3",
+        "IDQN": "C0",
+        "Fixed Time": "C1",
+        "MPLight": "C2",
+        "Advanced-MPLight": "C4",
+        "Parameter Reset": "C5"
+    },
+    "names_map": {
+        "timeLoss": "Average Delay",
+        "duration": "Average Travel Time",
+        "waitingTime": "Average Waiting Time",
+        "rewards": "Reward",
+        "max_queues": "Max Queue Length",
+        "queue_lengths": "Average Queue Length",
+        "vehicles": "Demand",
+        "phase_length": "Phase Length",
+        "yaxis_timeLoss": "Delay (s)",
+        "yaxis_duration": "Travel Time (s)",
+        "yaxis_waitingTime": "Waiting Time (s)",
+        "yaxis_rewards": "Reward total",
+        "yaxis_max_queues": "Queue length",
+        "yaxis_queue_lengths": "Queue length",
+        "yaxis_vehicles": "Vehicles (vpm)",
+        "cologne1": "Cologne Single",
+        "cologne3": "Cologne Corridor",
+        "cologne8": "Cologne Region",
+        "ingolstadt1": "Ingolstadt Single",
+        "ingolstadt7": "Ingolstadt Corridor",
+        "ingolstadt21": "Ingolstadt Region",
+        "saltlake2_stateXuniversity": "Univ & State - 2023 Q1",
+        "saltlake2_stateXuniversity#signals@['A3']": "Univ & State - 2023 Q1 - West Signal",
+        "saltlake2_stateXuniversity#signals@['B3']": "Univ & State - 2023 Q1 - East Signal",
+        "saltlake2_400sX200w": "400S & 200W - 2023 Q1",
+        "saltlake2_400sX200w#signals@['A3']": "400S & 200W - 2023 Q1 - West Signal",
+        "saltlake2_400sX200w#signals@['B3']": "400S & 200W - 2023 Q1 - East Signal",
+        "FIXED": "Fixed time",
+        "MAXWAVE": "Max wave",
+        "MAXPRESSURE": "Max pressure",
+        "RLCD": "RL-CD",
+        "AdvancedMPLight": "Advanced-MPLight",
+        "IMultiDQN": "DARTS",
+        "init_time": "H",
+        "sample_time": "W",
+        "model_buffer_size": "n",
+        "deviations": "\u03c3",
+        "fixed_buffer": "Fixed",
+        "parameter_reset_freq": "Reset",
+        "buffer_size": "Buffer",
+        "action_set": "Actions",
+        "fasttrac": "Fast TRAC",
+        "crelu": "CReLU",
+        "global_buffers": "Global",
+        "blank_params": {
+            "IMultiDQN": [
+                "criteria",
+                "expert"
+            ],
+            "ISAC": [
+                "cl_method"
+            ]
+        },
+        "relevant_params": {
+            "IDQN": [
+                "fasttrac",
+                "crelu",
+                "parameter_reset_freq",
+                "buffer_size"
+            ],
+            "RLCD": [
+                "action_set"
+            ],
+            "ISAC": [
+                "cl_method"
+            ],
+            "IMultiDQN": [
+                "criteria",
+                [
+                    "criteria",
+                    "!std&!kstest&!oracle_vehicles",
+                    [
+                        "fallback"
+                    ]
+                ],
+                [
+                    "criteria",
+                    "std",
+                    [
+                        "global_buffers",
+                        "expert",
+                        "init_time",
+                        "sample_time",
+                        "deviations",
+                        "model_buffer_size",
+                        "fixed_buffer"
+                    ]
+                ],
+                [
+                    "criteria",
+                    "kstest",
+                    [
+                        "expert",
+                        "init_time",
+                        "sample_time",
+                        "p_value",
+                        "model_buffer_size",
+                        "fixed_buffer"
+                    ]
+                ]
+            ]
+        },
+        "text_values": {
+            "std": "Std Dev",
+            "kstest": "K-S Test"
+        }
+    },
+    "controlled_signals": null,
+    "uncontrolled_policy": "MAXPRESSURE",
+    "action_set": "Phase",
+    "episodes": 100,
+    "converged": null,
+    "log_dir": "C:\\Users\\Lenovo\\Desktop\\\u4ea4\u901a\u5927\u6a21\u578b\u9879\u76ee\\sumu\u4eff\u771f\\RESCO\\results",
+    "gui": true,
+    "live_queues": true,
+    "libsumo": true,
+    "load_sim": null,
+    "save_model": false,
+    "save_frequency": 20,
+    "load_model": null,
+    "load_replay": true,
+    "training": true,
+    "testing": 0,
+    "flow": 1.0,
+    "curriculum": null,
+    "max_distance": 200,
+    "step_length": 5,
+    "yellow_length": 3,
+    "clearance_length": 2,
+    "step_ratio": 1,
+    "run_hour": null,
+    "clean_nightly": null,
+    "log_level": "INFO",
+    "save_console_log": false,
+    "delete_episode_logs": true,
+    "seed": null,
+    "gpu": 0,
+    "flat_state": true,
+    "script_launcher": true,
+    "processors": 4,
+    "trials": 5,
+    "optuna_objective": null,
+    "optuna_trials": 1000,
+    "error_bars": true,
+    "smoothing": null,
+    "xml_metrics": [
+        "timeLoss",
+        "duration",
+        "waitingTime"
+    ],
+    "csv_metrics": [
+        "rewards",
+        "max_queues",
+        "queue_lengths",
+        "vehicles",
+        "phase_length"
+    ],
+    "directions": [
+        "S-W",
+        "S-S",
+        "S-E",
+        "W-N",
+        "W-W",
+        "W-S",
+        "N-E",
+        "N-N",
+        "N-W",
+        "E-S",
+        "E-E",
+        "E-N"
+    ],
+    "phase_pairs": [
+        [
+            "S-S",
+            "N-N"
+        ],
+        [
+            "S-E",
+            "N-W"
+        ],
+        [
+            "S-S",
+            "S-E"
+        ],
+        [
+            "N-N",
+            "N-W"
+        ],
+        [
+            "W-W",
+            "E-E"
+        ],
+        [
+            "W-S",
+            "E-N"
+        ],
+        [
+            "E-E",
+            "E-N"
+        ],
+        [
+            "W-W",
+            "W-S"
+        ]
+    ],
+    "pair_to_act_map": null,
+    "A0": {
+        "lane_sets": {
+            "S-W": [
+                "A1A0_0"
+            ],
+            "S-S": [
+                "A1A0_1"
+            ],
+            "S-E": [
+                "A1A0_2"
+            ],
+            "W-N": [
+                "B0A0_0"
+            ],
+            "W-W": [
+                "B0A0_1"
+            ],
+            "W-S": [
+                "B0A0_2"
+            ],
+            "N-E": [
+                "bottom0A0_0"
+            ],
+            "N-N": [
+                "bottom0A0_1"
+            ],
+            "N-W": [
+                "bottom0A0_2"
+            ],
+            "E-S": [
+                "left0A0_0"
+            ],
+            "E-E": [
+                "left0A0_1"
+            ],
+            "E-N": [
+                "left0A0_2"
+            ]
+        },
+        "downstream": {
+            "N": "A1",
+            "E": "B0",
+            "S": null,
+            "W": null
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "A1": {
+        "lane_sets": {
+            "S-W": [
+                "A2A1_0"
+            ],
+            "S-S": [
+                "A2A1_1"
+            ],
+            "S-E": [
+                "A2A1_2"
+            ],
+            "W-N": [
+                "B1A1_0"
+            ],
+            "W-W": [
+                "B1A1_1"
+            ],
+            "W-S": [
+                "B1A1_2"
+            ],
+            "N-E": [
+                "A0A1_0"
+            ],
+            "N-N": [
+                "A0A1_1"
+            ],
+            "N-W": [
+                "A0A1_2"
+            ],
+            "E-S": [
+                "left1A1_0"
+            ],
+            "E-E": [
+                "left1A1_1"
+            ],
+            "E-N": [
+                "left1A1_2"
+            ]
+        },
+        "downstream": {
+            "N": "A2",
+            "E": "B1",
+            "S": "A0",
+            "W": null
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "A2": {
+        "lane_sets": {
+            "S-W": [
+                "top0A2_0"
+            ],
+            "S-S": [
+                "top0A2_1"
+            ],
+            "S-E": [
+                "top0A2_2"
+            ],
+            "W-N": [
+                "B2A2_0"
+            ],
+            "W-W": [
+                "B2A2_1"
+            ],
+            "W-S": [
+                "B2A2_2"
+            ],
+            "N-E": [
+                "A1A2_0"
+            ],
+            "N-N": [
+                "A1A2_1"
+            ],
+            "N-W": [
+                "A1A2_2"
+            ],
+            "E-S": [
+                "left2A2_0"
+            ],
+            "E-E": [
+                "left2A2_1"
+            ],
+            "E-N": [
+                "left2A2_2"
+            ]
+        },
+        "downstream": {
+            "N": null,
+            "E": "B2",
+            "S": "A1",
+            "W": null
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "B0": {
+        "lane_sets": {
+            "S-W": [
+                "B1B0_0"
+            ],
+            "S-S": [
+                "B1B0_1"
+            ],
+            "S-E": [
+                "B1B0_2"
+            ],
+            "W-N": [
+                "C0B0_0"
+            ],
+            "W-W": [
+                "C0B0_1"
+            ],
+            "W-S": [
+                "C0B0_2"
+            ],
+            "N-E": [
+                "bottom1B0_0"
+            ],
+            "N-N": [
+                "bottom1B0_1"
+            ],
+            "N-W": [
+                "bottom1B0_2"
+            ],
+            "E-S": [
+                "A0B0_0"
+            ],
+            "E-E": [
+                "A0B0_1"
+            ],
+            "E-N": [
+                "A0B0_2"
+            ]
+        },
+        "downstream": {
+            "N": "B1",
+            "E": "C0",
+            "S": null,
+            "W": "A0"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "B1": {
+        "lane_sets": {
+            "S-W": [
+                "B2B1_0"
+            ],
+            "S-S": [
+                "B2B1_1"
+            ],
+            "S-E": [
+                "B2B1_2"
+            ],
+            "W-N": [
+                "C1B1_0"
+            ],
+            "W-W": [
+                "C1B1_1"
+            ],
+            "W-S": [
+                "C1B1_2"
+            ],
+            "N-E": [
+                "B0B1_0"
+            ],
+            "N-N": [
+                "B0B1_1"
+            ],
+            "N-W": [
+                "B0B1_2"
+            ],
+            "E-S": [
+                "A1B1_0"
+            ],
+            "E-E": [
+                "A1B1_1"
+            ],
+            "E-N": [
+                "A1B1_2"
+            ]
+        },
+        "downstream": {
+            "N": "B2",
+            "E": "C1",
+            "S": "B0",
+            "W": "A1"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "B2": {
+        "lane_sets": {
+            "S-W": [
+                "top1B2_0"
+            ],
+            "S-S": [
+                "top1B2_1"
+            ],
+            "S-E": [
+                "top1B2_2"
+            ],
+            "W-N": [
+                "C2B2_0"
+            ],
+            "W-W": [
+                "C2B2_1"
+            ],
+            "W-S": [
+                "C2B2_2"
+            ],
+            "N-E": [
+                "B1B2_0"
+            ],
+            "N-N": [
+                "B1B2_1"
+            ],
+            "N-W": [
+                "B1B2_2"
+            ],
+            "E-S": [
+                "A2B2_0"
+            ],
+            "E-E": [
+                "A2B2_1"
+            ],
+            "E-N": [
+                "A2B2_2"
+            ]
+        },
+        "downstream": {
+            "N": null,
+            "E": "C2",
+            "S": "B1",
+            "W": "A2"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "C0": {
+        "lane_sets": {
+            "S-W": [
+                "C1C0_0"
+            ],
+            "S-S": [
+                "C1C0_1"
+            ],
+            "S-E": [
+                "C1C0_2"
+            ],
+            "W-N": [
+                "right0C0_0"
+            ],
+            "W-W": [
+                "right0C0_1"
+            ],
+            "W-S": [
+                "right0C0_2"
+            ],
+            "N-E": [
+                "bottom2C0_0"
+            ],
+            "N-N": [
+                "bottom2C0_1"
+            ],
+            "N-W": [
+                "bottom2C0_2"
+            ],
+            "E-S": [
+                "B0C0_0"
+            ],
+            "E-E": [
+                "B0C0_1"
+            ],
+            "E-N": [
+                "B0C0_2"
+            ]
+        },
+        "downstream": {
+            "N": "C1",
+            "E": null,
+            "S": null,
+            "W": "B0"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "C1": {
+        "lane_sets": {
+            "S-W": [
+                "C2C1_0"
+            ],
+            "S-S": [
+                "C2C1_1"
+            ],
+            "S-E": [
+                "C2C1_2"
+            ],
+            "W-N": [
+                "right1C1_0"
+            ],
+            "W-W": [
+                "right1C1_1"
+            ],
+            "W-S": [
+                "right1C1_2"
+            ],
+            "N-E": [
+                "C0C1_0"
+            ],
+            "N-N": [
+                "C0C1_1"
+            ],
+            "N-W": [
+                "C0C1_2"
+            ],
+            "E-S": [
+                "B1C1_0"
+            ],
+            "E-E": [
+                "B1C1_1"
+            ],
+            "E-N": [
+                "B1C1_2"
+            ]
+        },
+        "downstream": {
+            "N": "C2",
+            "E": null,
+            "S": "C0",
+            "W": "B1"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "C2": {
+        "lane_sets": {
+            "S-W": [
+                "top2C2_0"
+            ],
+            "S-S": [
+                "top2C2_1"
+            ],
+            "S-E": [
+                "top2C2_2"
+            ],
+            "W-N": [
+                "right2C2_0"
+            ],
+            "W-W": [
+                "right2C2_1"
+            ],
+            "W-S": [
+                "right2C2_2"
+            ],
+            "N-E": [
+                "C1C2_0"
+            ],
+            "N-N": [
+                "C1C2_1"
+            ],
+            "N-W": [
+                "C1C2_2"
+            ],
+            "E-S": [
+                "B2C2_0"
+            ],
+            "E-E": [
+                "B2C2_1"
+            ],
+            "E-N": [
+                "B2C2_2"
+            ]
+        },
+        "downstream": {
+            "N": null,
+            "E": null,
+            "S": "C1",
+            "W": "B2"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "network": "grid3x3.net.xml",
+    "route": "grid3x3.rou.xml",
+    "start_time": 0,
+    "end_time": 3600,
+    "module": "static.fixed",
+    "state": "wave",
+    "reward": "wait",
+    "benchmark_path": "C:\\Users\\Lenovo\\Desktop\\\u4ea4\u901a\u5927\u6a21\u578b\u9879\u76ee\\sumu\u4eff\u771f\\RESCO",
+    "map": "grid3x3",
+    "algorithm": "FIXED",
+    "uuid": "22df79ac-14b4-412e-88d9-d3043b4867f2"
+}

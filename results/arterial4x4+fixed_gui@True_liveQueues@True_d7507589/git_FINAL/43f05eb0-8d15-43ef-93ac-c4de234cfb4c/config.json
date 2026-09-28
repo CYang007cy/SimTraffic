@@ -1,0 +1,1172 @@
+{
+    "colors_map": {
+        "Max Pressure": "C3",
+        "IDQN": "C0",
+        "Fixed Time": "C1",
+        "MPLight": "C2",
+        "Advanced-MPLight": "C4",
+        "Parameter Reset": "C5"
+    },
+    "names_map": {
+        "timeLoss": "Average Delay",
+        "duration": "Average Travel Time",
+        "waitingTime": "Average Waiting Time",
+        "rewards": "Reward",
+        "max_queues": "Max Queue Length",
+        "queue_lengths": "Average Queue Length",
+        "vehicles": "Demand",
+        "phase_length": "Phase Length",
+        "yaxis_timeLoss": "Delay (s)",
+        "yaxis_duration": "Travel Time (s)",
+        "yaxis_waitingTime": "Waiting Time (s)",
+        "yaxis_rewards": "Reward total",
+        "yaxis_max_queues": "Queue length",
+        "yaxis_queue_lengths": "Queue length",
+        "yaxis_vehicles": "Vehicles (vpm)",
+        "cologne1": "Cologne Single",
+        "cologne3": "Cologne Corridor",
+        "cologne8": "Cologne Region",
+        "ingolstadt1": "Ingolstadt Single",
+        "ingolstadt7": "Ingolstadt Corridor",
+        "ingolstadt21": "Ingolstadt Region",
+        "saltlake2_stateXuniversity": "Univ & State - 2023 Q1",
+        "saltlake2_stateXuniversity#signals@['A3']": "Univ & State - 2023 Q1 - West Signal",
+        "saltlake2_stateXuniversity#signals@['B3']": "Univ & State - 2023 Q1 - East Signal",
+        "saltlake2_400sX200w": "400S & 200W - 2023 Q1",
+        "saltlake2_400sX200w#signals@['A3']": "400S & 200W - 2023 Q1 - West Signal",
+        "saltlake2_400sX200w#signals@['B3']": "400S & 200W - 2023 Q1 - East Signal",
+        "FIXED": "Fixed time",
+        "MAXWAVE": "Max wave",
+        "MAXPRESSURE": "Max pressure",
+        "RLCD": "RL-CD",
+        "AdvancedMPLight": "Advanced-MPLight",
+        "IMultiDQN": "DARTS",
+        "init_time": "H",
+        "sample_time": "W",
+        "model_buffer_size": "n",
+        "deviations": "\u03c3",
+        "fixed_buffer": "Fixed",
+        "parameter_reset_freq": "Reset",
+        "buffer_size": "Buffer",
+        "action_set": "Actions",
+        "fasttrac": "Fast TRAC",
+        "crelu": "CReLU",
+        "global_buffers": "Global",
+        "blank_params": {
+            "IMultiDQN": [
+                "criteria",
+                "expert"
+            ],
+            "ISAC": [
+                "cl_method"
+            ]
+        },
+        "relevant_params": {
+            "IDQN": [
+                "fasttrac",
+                "crelu",
+                "parameter_reset_freq",
+                "buffer_size"
+            ],
+            "RLCD": [
+                "action_set"
+            ],
+            "ISAC": [
+                "cl_method"
+            ],
+            "IMultiDQN": [
+                "criteria",
+                [
+                    "criteria",
+                    "!std&!kstest&!oracle_vehicles",
+                    [
+                        "fallback"
+                    ]
+                ],
+                [
+                    "criteria",
+                    "std",
+                    [
+                        "global_buffers",
+                        "expert",
+                        "init_time",
+                        "sample_time",
+                        "deviations",
+                        "model_buffer_size",
+                        "fixed_buffer"
+                    ]
+                ],
+                [
+                    "criteria",
+                    "kstest",
+                    [
+                        "expert",
+                        "init_time",
+                        "sample_time",
+                        "p_value",
+                        "model_buffer_size",
+                        "fixed_buffer"
+                    ]
+                ]
+            ]
+        },
+        "text_values": {
+            "std": "Std Dev",
+            "kstest": "K-S Test"
+        }
+    },
+    "controlled_signals": null,
+    "uncontrolled_policy": "MAXPRESSURE",
+    "action_set": "Phase",
+    "episodes": 100,
+    "converged": null,
+    "log_dir": "C:\\Users\\Lenovo\\Desktop\\\u4ea4\u901a\u5927\u6a21\u578b\u9879\u76ee\\sumu\u4eff\u771f\\RESCO\\results",
+    "gui": true,
+    "live_queues": true,
+    "libsumo": true,
+    "load_sim": null,
+    "save_model": false,
+    "save_frequency": 20,
+    "load_model": null,
+    "load_replay": true,
+    "training": true,
+    "testing": 0,
+    "flow": 1.0,
+    "curriculum": null,
+    "max_distance": 200,
+    "step_length": 5,
+    "yellow_length": 3,
+    "clearance_length": 2,
+    "step_ratio": 1,
+    "run_hour": null,
+    "clean_nightly": null,
+    "log_level": "INFO",
+    "save_console_log": false,
+    "delete_episode_logs": true,
+    "seed": null,
+    "gpu": 0,
+    "flat_state": true,
+    "script_launcher": true,
+    "processors": 4,
+    "trials": 5,
+    "optuna_objective": null,
+    "optuna_trials": 1000,
+    "error_bars": true,
+    "smoothing": null,
+    "xml_metrics": [
+        "timeLoss",
+        "duration",
+        "waitingTime"
+    ],
+    "csv_metrics": [
+        "rewards",
+        "max_queues",
+        "queue_lengths",
+        "vehicles",
+        "phase_length"
+    ],
+    "directions": [
+        "S-W",
+        "S-S",
+        "S-E",
+        "W-N",
+        "W-W",
+        "W-S",
+        "N-E",
+        "N-N",
+        "N-W",
+        "E-S",
+        "E-E",
+        "E-N"
+    ],
+    "phase_pairs": [
+        [
+            "S-S",
+            "N-N"
+        ],
+        [
+            "W-S",
+            "E-N"
+        ],
+        [
+            "W-W",
+            "E-E"
+        ],
+        [
+            "W-W",
+            "W-S"
+        ],
+        [
+            "E-E",
+            "E-N"
+        ]
+    ],
+    "pair_to_act_map": null,
+    "nt1": {
+        "lane_sets": {
+            "S-W": [
+                "nt5_nt1_0"
+            ],
+            "S-S": [
+                "nt5_nt1_0"
+            ],
+            "S-E": [
+                "nt5_nt1_0"
+            ],
+            "W-N": [
+                "nt2_nt1_0"
+            ],
+            "W-W": [
+                "nt2_nt1_0"
+            ],
+            "W-S": [
+                "nt2_nt1_1"
+            ],
+            "N-E": [
+                "np1_nt1_0"
+            ],
+            "N-N": [
+                "np1_nt1_0"
+            ],
+            "N-W": [
+                "np1_nt1_0"
+            ],
+            "E-S": [
+                "np16_nt1_0"
+            ],
+            "E-E": [
+                "np16_nt1_0"
+            ],
+            "E-N": [
+                "np16_nt1_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt5",
+            "E": "nt2",
+            "S": null,
+            "W": null
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt2": {
+        "lane_sets": {
+            "S-W": [
+                "nt6_nt2_0"
+            ],
+            "S-S": [
+                "nt6_nt2_0"
+            ],
+            "S-E": [
+                "nt6_nt2_0"
+            ],
+            "W-N": [
+                "nt3_nt2_0"
+            ],
+            "W-W": [
+                "nt3_nt2_0"
+            ],
+            "W-S": [
+                "nt3_nt2_1"
+            ],
+            "N-E": [
+                "np2_nt2_0"
+            ],
+            "N-N": [
+                "np2_nt2_0"
+            ],
+            "N-W": [
+                "np2_nt2_0"
+            ],
+            "E-S": [
+                "nt1_nt2_0"
+            ],
+            "E-E": [
+                "nt1_nt2_0"
+            ],
+            "E-N": [
+                "nt1_nt2_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt6",
+            "E": "nt3",
+            "S": null,
+            "W": "nt1"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt3": {
+        "lane_sets": {
+            "S-W": [
+                "nt7_nt3_0"
+            ],
+            "S-S": [
+                "nt7_nt3_0"
+            ],
+            "S-E": [
+                "nt7_nt3_0"
+            ],
+            "W-N": [
+                "nt4_nt3_0"
+            ],
+            "W-W": [
+                "nt4_nt3_0"
+            ],
+            "W-S": [
+                "nt4_nt3_1"
+            ],
+            "N-E": [
+                "np3_nt3_0"
+            ],
+            "N-N": [
+                "np3_nt3_0"
+            ],
+            "N-W": [
+                "np3_nt3_0"
+            ],
+            "E-S": [
+                "nt2_nt3_0"
+            ],
+            "E-E": [
+                "nt2_nt3_0"
+            ],
+            "E-N": [
+                "nt2_nt3_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt7",
+            "E": "nt4",
+            "S": null,
+            "W": "nt2"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt4": {
+        "lane_sets": {
+            "S-W": [
+                "nt8_nt4_0"
+            ],
+            "S-S": [
+                "nt8_nt4_0"
+            ],
+            "S-E": [
+                "nt8_nt4_0"
+            ],
+            "W-N": [
+                "np5_nt4_0"
+            ],
+            "W-W": [
+                "np5_nt4_0"
+            ],
+            "W-S": [
+                "np5_nt4_1"
+            ],
+            "N-E": [
+                "np4_nt4_0"
+            ],
+            "N-N": [
+                "np4_nt4_0"
+            ],
+            "N-W": [
+                "np4_nt4_0"
+            ],
+            "E-S": [
+                "nt3_nt4_0"
+            ],
+            "E-E": [
+                "nt3_nt4_0"
+            ],
+            "E-N": [
+                "nt3_nt4_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt8",
+            "E": null,
+            "S": null,
+            "W": "nt3"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt5": {
+        "lane_sets": {
+            "S-W": [
+                "nt9_nt5_0"
+            ],
+            "S-S": [
+                "nt9_nt5_0"
+            ],
+            "S-E": [
+                "nt9_nt5_0"
+            ],
+            "W-N": [
+                "nt6_nt5_0"
+            ],
+            "W-W": [
+                "nt6_nt5_0"
+            ],
+            "W-S": [
+                "nt6_nt5_1"
+            ],
+            "N-E": [
+                "nt1_nt5_0"
+            ],
+            "N-N": [
+                "nt1_nt5_0"
+            ],
+            "N-W": [
+                "nt1_nt5_0"
+            ],
+            "E-S": [
+                "np15_nt5_0"
+            ],
+            "E-E": [
+                "np15_nt5_0"
+            ],
+            "E-N": [
+                "np15_nt5_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt9",
+            "E": "nt6",
+            "S": "nt1",
+            "W": null
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt6": {
+        "lane_sets": {
+            "S-W": [
+                "nt10_nt6_0"
+            ],
+            "S-S": [
+                "nt10_nt6_0"
+            ],
+            "S-E": [
+                "nt10_nt6_0"
+            ],
+            "W-N": [
+                "nt7_nt6_0"
+            ],
+            "W-W": [
+                "nt7_nt6_0"
+            ],
+            "W-S": [
+                "nt7_nt6_1"
+            ],
+            "N-E": [
+                "nt2_nt6_0"
+            ],
+            "N-N": [
+                "nt2_nt6_0"
+            ],
+            "N-W": [
+                "nt2_nt6_0"
+            ],
+            "E-S": [
+                "nt5_nt6_0"
+            ],
+            "E-E": [
+                "nt5_nt6_0"
+            ],
+            "E-N": [
+                "nt5_nt6_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt10",
+            "E": "nt7",
+            "S": "nt2",
+            "W": "nt5"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt7": {
+        "lane_sets": {
+            "S-W": [
+                "nt11_nt7_0"
+            ],
+            "S-S": [
+                "nt11_nt7_0"
+            ],
+            "S-E": [
+                "nt11_nt7_0"
+            ],
+            "W-N": [
+                "nt8_nt7_0"
+            ],
+            "W-W": [
+                "nt8_nt7_0"
+            ],
+            "W-S": [
+                "nt8_nt7_1"
+            ],
+            "N-E": [
+                "nt3_nt7_0"
+            ],
+            "N-N": [
+                "nt3_nt7_0"
+            ],
+            "N-W": [
+                "nt3_nt7_0"
+            ],
+            "E-S": [
+                "nt6_nt7_0"
+            ],
+            "E-E": [
+                "nt6_nt7_0"
+            ],
+            "E-N": [
+                "nt6_nt7_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt11",
+            "E": "nt8",
+            "S": "nt3",
+            "W": "nt6"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt8": {
+        "lane_sets": {
+            "S-W": [
+                "nt12_nt8_0"
+            ],
+            "S-S": [
+                "nt12_nt8_0"
+            ],
+            "S-E": [
+                "nt12_nt8_0"
+            ],
+            "W-N": [
+                "np6_nt8_0"
+            ],
+            "W-W": [
+                "np6_nt8_0"
+            ],
+            "W-S": [
+                "np6_nt8_1"
+            ],
+            "N-E": [
+                "nt4_nt8_0"
+            ],
+            "N-N": [
+                "nt4_nt8_0"
+            ],
+            "N-W": [
+                "nt4_nt8_0"
+            ],
+            "E-S": [
+                "nt7_nt8_0"
+            ],
+            "E-E": [
+                "nt7_nt8_0"
+            ],
+            "E-N": [
+                "nt7_nt8_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt12",
+            "E": null,
+            "S": "nt4",
+            "W": "nt7"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt9": {
+        "lane_sets": {
+            "S-W": [
+                "nt13_nt9_0"
+            ],
+            "S-S": [
+                "nt13_nt9_0"
+            ],
+            "S-E": [
+                "nt13_nt9_0"
+            ],
+            "W-N": [
+                "nt10_nt9_0"
+            ],
+            "W-W": [
+                "nt10_nt9_0"
+            ],
+            "W-S": [
+                "nt10_nt9_1"
+            ],
+            "N-E": [
+                "nt5_nt9_0"
+            ],
+            "N-N": [
+                "nt5_nt9_0"
+            ],
+            "N-W": [
+                "nt5_nt9_0"
+            ],
+            "E-S": [
+                "np14_nt9_0"
+            ],
+            "E-E": [
+                "np14_nt9_0"
+            ],
+            "E-N": [
+                "np14_nt9_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt13",
+            "E": "nt10",
+            "S": "nt5",
+            "W": null
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt10": {
+        "lane_sets": {
+            "S-W": [
+                "nt14_nt10_0"
+            ],
+            "S-S": [
+                "nt14_nt10_0"
+            ],
+            "S-E": [
+                "nt14_nt10_0"
+            ],
+            "W-N": [
+                "nt11_nt10_0"
+            ],
+            "W-W": [
+                "nt11_nt10_0"
+            ],
+            "W-S": [
+                "nt11_nt10_1"
+            ],
+            "N-E": [
+                "nt6_nt10_0"
+            ],
+            "N-N": [
+                "nt6_nt10_0"
+            ],
+            "N-W": [
+                "nt6_nt10_0"
+            ],
+            "E-S": [
+                "nt9_nt10_0"
+            ],
+            "E-E": [
+                "nt9_nt10_0"
+            ],
+            "E-N": [
+                "nt9_nt10_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt14",
+            "E": "nt11",
+            "S": "nt6",
+            "W": "nt9"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt11": {
+        "lane_sets": {
+            "S-W": [
+                "nt15_nt11_0"
+            ],
+            "S-S": [
+                "nt15_nt11_0"
+            ],
+            "S-E": [
+                "nt15_nt11_0"
+            ],
+            "W-N": [
+                "nt12_nt11_0"
+            ],
+            "W-W": [
+                "nt12_nt11_0"
+            ],
+            "W-S": [
+                "nt12_nt11_1"
+            ],
+            "N-E": [
+                "nt7_nt11_0"
+            ],
+            "N-N": [
+                "nt7_nt11_0"
+            ],
+            "N-W": [
+                "nt7_nt11_0"
+            ],
+            "E-S": [
+                "nt10_nt11_0"
+            ],
+            "E-E": [
+                "nt10_nt11_0"
+            ],
+            "E-N": [
+                "nt10_nt11_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt15",
+            "E": "nt12",
+            "S": "nt7",
+            "W": "nt10"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt12": {
+        "lane_sets": {
+            "S-W": [
+                "nt16_nt12_0"
+            ],
+            "S-S": [
+                "nt16_nt12_0"
+            ],
+            "S-E": [
+                "nt16_nt12_0"
+            ],
+            "W-N": [
+                "np7_nt12_0"
+            ],
+            "W-W": [
+                "np7_nt12_0"
+            ],
+            "W-S": [
+                "np7_nt12_1"
+            ],
+            "N-E": [
+                "nt8_nt12_0"
+            ],
+            "N-N": [
+                "nt8_nt12_0"
+            ],
+            "N-W": [
+                "nt8_nt12_0"
+            ],
+            "E-S": [
+                "nt11_nt12_0"
+            ],
+            "E-E": [
+                "nt11_nt12_0"
+            ],
+            "E-N": [
+                "nt11_nt12_1"
+            ]
+        },
+        "downstream": {
+            "N": "nt16",
+            "E": null,
+            "S": "nt8",
+            "W": "nt11"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt13": {
+        "lane_sets": {
+            "S-W": [
+                "np12_nt13_0"
+            ],
+            "S-S": [
+                "np12_nt13_0"
+            ],
+            "S-E": [
+                "np12_nt13_0"
+            ],
+            "W-N": [
+                "nt14_nt13_0"
+            ],
+            "W-W": [
+                "nt14_nt13_0"
+            ],
+            "W-S": [
+                "nt14_nt13_1"
+            ],
+            "N-E": [
+                "nt9_nt13_0"
+            ],
+            "N-N": [
+                "nt9_nt13_0"
+            ],
+            "N-W": [
+                "nt9_nt13_0"
+            ],
+            "E-S": [
+                "np13_nt13_0"
+            ],
+            "E-E": [
+                "np13_nt13_0"
+            ],
+            "E-N": [
+                "np13_nt13_1"
+            ]
+        },
+        "downstream": {
+            "N": null,
+            "E": "nt14",
+            "S": "nt9",
+            "W": null
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt14": {
+        "lane_sets": {
+            "S-W": [
+                "np11_nt14_0"
+            ],
+            "S-S": [
+                "np11_nt14_0"
+            ],
+            "S-E": [
+                "np11_nt14_0"
+            ],
+            "W-N": [
+                "nt15_nt14_0"
+            ],
+            "W-W": [
+                "nt15_nt14_0"
+            ],
+            "W-S": [
+                "nt15_nt14_1"
+            ],
+            "N-E": [
+                "nt10_nt14_0"
+            ],
+            "N-N": [
+                "nt10_nt14_0"
+            ],
+            "N-W": [
+                "nt10_nt14_0"
+            ],
+            "E-S": [
+                "nt13_nt14_0"
+            ],
+            "E-E": [
+                "nt13_nt14_0"
+            ],
+            "E-N": [
+                "nt13_nt14_1"
+            ]
+        },
+        "downstream": {
+            "N": null,
+            "E": "nt15",
+            "S": "nt10",
+            "W": "nt13"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt15": {
+        "lane_sets": {
+            "S-W": [
+                "np10_nt15_0"
+            ],
+            "S-S": [
+                "np10_nt15_0"
+            ],
+            "S-E": [
+                "np10_nt15_0"
+            ],
+            "W-N": [
+                "nt16_nt15_0"
+            ],
+            "W-W": [
+                "nt16_nt15_0"
+            ],
+            "W-S": [
+                "nt16_nt15_1"
+            ],
+            "N-E": [
+                "nt11_nt15_0"
+            ],
+            "N-N": [
+                "nt11_nt15_0"
+            ],
+            "N-W": [
+                "nt11_nt15_0"
+            ],
+            "E-S": [
+                "nt14_nt15_0"
+            ],
+            "E-E": [
+                "nt14_nt15_0"
+            ],
+            "E-N": [
+                "nt14_nt15_1"
+            ]
+        },
+        "downstream": {
+            "N": null,
+            "E": "nt16",
+            "S": "nt11",
+            "W": "nt14"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "nt16": {
+        "lane_sets": {
+            "S-W": [
+                "np9_nt16_0"
+            ],
+            "S-S": [
+                "np9_nt16_0"
+            ],
+            "S-E": [
+                "np9_nt16_0"
+            ],
+            "W-N": [
+                "np8_nt16_0"
+            ],
+            "W-W": [
+                "np8_nt16_0"
+            ],
+            "W-S": [
+                "np8_nt16_1"
+            ],
+            "N-E": [
+                "nt12_nt16_0"
+            ],
+            "N-N": [
+                "nt12_nt16_0"
+            ],
+            "N-W": [
+                "nt12_nt16_0"
+            ],
+            "E-S": [
+                "nt15_nt16_0"
+            ],
+            "E-E": [
+                "nt15_nt16_0"
+            ],
+            "E-N": [
+                "nt15_nt16_1"
+            ]
+        },
+        "downstream": {
+            "N": null,
+            "E": null,
+            "S": "nt12",
+            "W": "nt15"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "management": {
+        "bot_left_mgr": [
+            "nt1",
+            "nt2",
+            "nt6",
+            "nt5"
+        ],
+        "bot_right_mgr": [
+            "nt3",
+            "nt4",
+            "nt8",
+            "nt7"
+        ],
+        "top_right_mgr": [
+            "nt11",
+            "nt12",
+            "nt16",
+            "nt15"
+        ],
+        "top_left_mgr": [
+            "nt9",
+            "nt10",
+            "nt14",
+            "nt13"
+        ]
+    },
+    "management_neighbors": {
+        "bot_left_mgr": [
+            "bot_right_mgr",
+            "top_left_mgr"
+        ],
+        "bot_right_mgr": [
+            "bot_left_mgr",
+            "top_right_mgr"
+        ],
+        "top_right_mgr": [
+            "bot_right_mgr",
+            "top_left_mgr"
+        ],
+        "top_left_mgr": [
+            "top_right_mgr",
+            "bot_left_mgr"
+        ]
+    },
+    "network": "arterial4x4.net.xml",
+    "route": "arterial4x4",
+    "start_time": 0,
+    "end_time": 3600,
+    "module": "static.fixed",
+    "state": "wave",
+    "reward": "wait",
+    "benchmark_path": "C:\\Users\\Lenovo\\Desktop\\\u4ea4\u901a\u5927\u6a21\u578b\u9879\u76ee\\sumu\u4eff\u771f\\RESCO",
+    "map": "arterial4x4",
+    "algorithm": "FIXED",
+    "uuid": "43f05eb0-8d15-43ef-93ac-c4de234cfb4c"
+}

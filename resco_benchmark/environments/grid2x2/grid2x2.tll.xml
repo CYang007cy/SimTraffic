@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tlLogics>
+    <tlLogic id="A0" type="static" programID="0" offset="0">
+        <phase duration="10" state="GGGGGGrrrsssrrrrrrGGGGGGrrrsssrrrrrr" />
+        <phase duration="3" state="yyyyyyrrrsssrrrrrryyyyyyrrrsssrrrrrr" />
+        <phase duration="10" state="sssrrrGGGsssrrrrrrsssrrrGGGsssrrrrrr" />
+        <phase duration="3" state="sssrrrGGGsssrrrrrrsssrrryyysssrrrrrr" />
+        <phase duration="10" state="GGGGGGGGGsssrrrrrrsssrrrrrrsssrrrrrr" />
+        <phase duration="3" state="yyyyyyyyysssrrrrrrsssrrrrrrsssrrrrrr" />
+        <phase duration="10" state="sssrrrrrrsssrrrrrrGGGGGGGGGsssrrrrrr" />
+        <phase duration="3" state="sssrrrrrrsssrrrrrryyyyyyyyysssrrrrrr" />
+        <phase duration="10" state="sssrrrrrrGGGGGGrrrsssrrrrrrGGGGGGrrr" />
+        <phase duration="3" state="sssrrrrrryyyyyyrrrsssrrrrrryyyyyyrrr" />
+        <phase duration="10" state="sssrrrrrrsssrrrGGGsssrrrrrrsssrrrGGG" />
+        <phase duration="3" state="sssrrrrrrsssrrryyysssrrrrrrsssrrrGGG" />
+        <phase duration="10" state="sssrrrrrrsssrrrrrrsssrrrrrrGGGGGGGGG" />
+        <phase duration="3" state="sssrrrrrrsssrrrrrrsssrrrrrryyyyyyyyy" />
+        <phase duration="10" state="sssrrrrrrGGGGGGGGGsssrrrrrrsssrrrrrr" />
+        <phase duration="3" state="sssrrrrrryyyyyyyyysssrrrrrrsssrrrrrr" />
+    </tlLogic>
+    <tlLogic id="A1" type="static" programID="0" offset="0">
+        <phase duration="10" state="GGGGGGrrrsssrrrrrrGGGGGGrrrsssrrrrrr" />
+        <phase duration="3" state="yyyyyyrrrsssrrrrrryyyyyyrrrsssrrrrrr" />
+        <phase duration="10" state="sssrrrGGGsssrrrrrrsssrrrGGGsssrrrrrr" />
+        <phase duration="3" state="sssrrrGGGsssrrrrrrsssrrryyysssrrrrrr" />
+        <phase duration="10" state="GGGGGGGGGsssrrrrrrsssrrrrrrsssrrrrrr" />
+        <phase duration="3" state="yyyyyyyyysssrrrrrrsssrrrrrrsssrrrrrr" />
+        <phase duration="10" state="sssrrrrrrsssrrrrrrGGGGGGGGGsssrrrrrr" />
+        <phase duration="3" state="sssrrrrrrsssrrrrrryyyyyyyyysssrrrrrr" />
+        <phase duration="10" state="sssrrrrrrGGGGGGrrrsssrrrrrrGGGGGGrrr" />
+        <phase duration="3" state="sssrrrrrryyyyyyrrrsssrrrrrryyyyyyrrr" />
+        <phase duration="10" state="sssrrrrrrsssrrrGGGsssrrrrrrsssrrrGGG" />
+        <phase duration="3" state="sssrrrrrrsssrrryyysssrrrrrrsssrrrGGG" />
+        <phase duration="10" state="sssrrrrrrsssrrrrrrsssrrrrrrGGGGGGGGG" />
+        <phase duration="3" state="sssrrrrrrsssrrrrrrsssrrrrrryyyyyyyyy" />
+        <phase duration="10" state="sssrrrrrrGGGGGGGGGsssrrrrrrsssrrrrrr" />
+        <phase duration="3" state="sssrrrrrryyyyyyyyysssrrrrrrsssrrrrrr" />
+    </tlLogic>
+    <tlLogic id="B0" type="static" programID="0" offset="0">
+        <phase duration="10" state="GGGGGGrrrsssrrrrrrGGGGGGrrrsssrrrrrr" />
+        <phase duration="3" state="yyyyyyrrrsssrrrrrryyyyyyrrrsssrrrrrr" />
+        <phase duration="10" state="sssrrrGGGsssrrrrrrsssrrrGGGsssrrrrrr" />
+        <phase duration="3" state="sssrrrGGGsssrrrrrrsssrrryyysssrrrrrr" />
+        <phase duration="10" state="GGGGGGGGGsssrrrrrrsssrrrrrrsssrrrrrr" />
+        <phase duration="3" state="yyyyyyyyysssrrrrrrsssrrrrrrsssrrrrrr" />
+        <phase duration="10" state="sssrrrrrrsssrrrrrrGGGGGGGGGsssrrrrrr" />
+        <phase duration="3" state="sssrrrrrrsssrrrrrryyyyyyyyysssrrrrrr" />
+        <phase duration="10" state="sssrrrrrrGGGGGGrrrsssrrrrrrGGGGGGrrr" />
+        <phase duration="3" state="sssrrrrrryyyyyyrrrsssrrrrrryyyyyyrrr" />
+        <phase duration="10" state="sssrrrrrrsssrrrGGGsssrrrrrrsssrrrGGG" />
+        <phase duration="3" state="sssrrrrrrsssrrryyysssrrrrrrsssrrrGGG" />
+        <phase duration="10" state="sssrrrrrrsssrrrrrrsssrrrrrrGGGGGGGGG" />
+        <phase duration="3" state="sssrrrrrrsssrrrrrrsssrrrrrryyyyyyyyy" />
+        <phase duration="10" state="sssrrrrrrGGGGGGGGGsssrrrrrrsssrrrrrr" />
+        <phase duration="3" state="sssrrrrrryyyyyyyyysssrrrrrrsssrrrrrr" />
+    </tlLogic>
+    <tlLogic id="B1" type="static" programID="0" offset="0">
+        <phase duration="10" state="GGGGGGrrrsssrrrrrrGGGGGGrrrsssrrrrrr" />
+        <phase duration="3" state="yyyyyyrrrsssrrrrrryyyyyyrrrsssrrrrrr" />
+        <phase duration="10" state="sssrrrGGGsssrrrrrrsssrrrGGGsssrrrrrr" />
+        <phase duration="3" state="sssrrrGGGsssrrrrrrsssrrryyysssrrrrrr" />
+        <phase duration="10" state="GGGGGGGGGsssrrrrrrsssrrrrrrsssrrrrrr" />
+        <phase duration="3" state="yyyyyyyyysssrrrrrrsssrrrrrrsssrrrrrr" />
+        <phase duration="10" state="sssrrrrrrsssrrrrrrGGGGGGGGGsssrrrrrr" />
+        <phase duration="3" state="sssrrrrrrsssrrrrrryyyyyyyyysssrrrrrr" />
+        <phase duration="10" state="sssrrrrrrGGGGGGrrrsssrrrrrrGGGGGGrrr" />
+        <phase duration="3" state="sssrrrrrryyyyyyrrrsssrrrrrryyyyyyrrr" />
+        <phase duration="10" state="sssrrrrrrsssrrrGGGsssrrrrrrsssrrrGGG" />
+        <phase duration="3" state="sssrrrrrrsssrrryyysssrrrrrrsssrrrGGG" />
+        <phase duration="10" state="sssrrrrrrsssrrrrrrsssrrrrrrGGGGGGGGG" />
+        <phase duration="3" state="sssrrrrrrsssrrrrrrsssrrrrrryyyyyyyyy" />
+        <phase duration="10" state="sssrrrrrrGGGGGGGGGsssrrrrrrsssrrrrrr" />
+        <phase duration="3" state="sssrrrrrryyyyyyyyysssrrrrrrsssrrrrrr" />
+    </tlLogic>
+    <connection from="A0A1" to="A1B1" fromLane="0" toLane="0" tl="A1" linkIndex="18" />
+    <connection from="A0A1" to="A1B1" fromLane="0" toLane="1" tl="A1" linkIndex="19" />
+    <connection from="A0A1" to="A1B1" fromLane="0" toLane="2" tl="A1" linkIndex="20" />
+    <connection from="A0A1" to="A1top0" fromLane="1" toLane="0" tl="A1" linkIndex="21" />
+    <connection from="A0A1" to="A1top0" fromLane="1" toLane="1" tl="A1" linkIndex="22" />
+    <connection from="A0A1" to="A1top0" fromLane="1" toLane="2" tl="A1" linkIndex="23" />
+    <connection from="A0A1" to="A1left1" fromLane="2" toLane="0" tl="A1" linkIndex="24" />
+    <connection from="A0A1" to="A1left1" fromLane="2" toLane="1" tl="A1" linkIndex="25" />
+    <connection from="A0A1" to="A1left1" fromLane="2" toLane="2" tl="A1" linkIndex="26" />
+    <connection from="A0B0" to="B0bottom1" fromLane="0" toLane="0" tl="B0" linkIndex="27" />
+    <connection from="A0B0" to="B0bottom1" fromLane="0" toLane="1" tl="B0" linkIndex="28" />
+    <connection from="A0B0" to="B0bottom1" fromLane="0" toLane="2" tl="B0" linkIndex="29" />
+    <connection from="A0B0" to="B0right0" fromLane="1" toLane="0" tl="B0" linkIndex="30" />
+    <connection from="A0B0" to="B0right0" fromLane="1" toLane="1" tl="B0" linkIndex="31" />
+    <connection from="A0B0" to="B0right0" fromLane="1" toLane="2" tl="B0" linkIndex="32" />
+    <connection from="A0B0" to="B0B1" fromLane="2" toLane="0" tl="B0" linkIndex="33" />
+    <connection from="A0B0" to="B0B1" fromLane="2" toLane="1" tl="B0" linkIndex="34" />
+    <connection from="A0B0" to="B0B1" fromLane="2" toLane="2" tl="B0" linkIndex="35" />
+    <connection from="A1A0" to="A0left0" fromLane="0" toLane="0" tl="A0" linkIndex="0" />
+    <connection from="A1A0" to="A0left0" fromLane="0" toLane="1" tl="A0" linkIndex="1" />
+    <connection from="A1A0" to="A0left0" fromLane="0" toLane="2" tl="A0" linkIndex="2" />
+    <connection from="A1A0" to="A0bottom0" fromLane="1" toLane="0" tl="A0" linkIndex="3" />
+    <connection from="A1A0" to="A0bottom0" fromLane="1" toLane="1" tl="A0" linkIndex="4" />
+    <connection from="A1A0" to="A0bottom0" fromLane="1" toLane="2" tl="A0" linkIndex="5" />
+    <connection from="A1A0" to="A0B0" fromLane="2" toLane="0" tl="A0" linkIndex="6" />
+    <connection from="A1A0" to="A0B0" fromLane="2" toLane="1" tl="A0" linkIndex="7" />
+    <connection from="A1A0" to="A0B0" fromLane="2" toLane="2" tl="A0" linkIndex="8" />
+    <connection from="A1B1" to="B1B0" fromLane="0" toLane="0" tl="B1" linkIndex="27" />
+    <connection from="A1B1" to="B1B0" fromLane="0" toLane="1" tl="B1" linkIndex="28" />
+    <connection from="A1B1" to="B1B0" fromLane="0" toLane="2" tl="B1" linkIndex="29" />
+    <connection from="A1B1" to="B1right1" fromLane="1" toLane="0" tl="B1" linkIndex="30" />
+    <connection from="A1B1" to="B1right1" fromLane="1" toLane="1" tl="B1" linkIndex="31" />
+    <connection from="A1B1" to="B1right1" fromLane="1" toLane="2" tl="B1" linkIndex="32" />
+    <connection from="A1B1" to="B1top1" fromLane="2" toLane="0" tl="B1" linkIndex="33" />
+    <connection from="A1B1" to="B1top1" fromLane="2" toLane="1" tl="B1" linkIndex="34" />
+    <connection from="A1B1" to="B1top1" fromLane="2" toLane="2" tl="B1" linkIndex="35" />
+    <connection from="top0A1" to="A1left1" fromLane="0" toLane="0" tl="A1" linkIndex="0" />
+    <connection from="top0A1" to="A1left1" fromLane="0" toLane="1" tl="A1" linkIndex="1" />
+    <connection from="top0A1" to="A1left1" fromLane="0" toLane="2" tl="A1" linkIndex="2" />
+    <connection from="top0A1" to="A1A0" fromLane="1" toLane="0" tl="A1" linkIndex="3" />
+    <connection from="top0A1" to="A1A0" fromLane="1" toLane="1" tl="A1" linkIndex="4" />
+    <connection from="top0A1" to="A1A0" fromLane="1" toLane="2" tl="A1" linkIndex="5" />
+    <connection from="top0A1" to="A1B1" fromLane="2" toLane="0" tl="A1" linkIndex="6" />
+    <connection from="top0A1" to="A1B1" fromLane="2" toLane="1" tl="A1" linkIndex="7" />
+    <connection from="top0A1" to="A1B1" fromLane="2" toLane="2" tl="A1" linkIndex="8" />
+    <connection from="B0A0" to="A0A1" fromLane="0" toLane="0" tl="A0" linkIndex="9" />
+    <connection from="B0A0" to="A0A1" fromLane="0" toLane="1" tl="A0" linkIndex="10" />
+    <connection from="B0A0" to="A0A1" fromLane="0" toLane="2" tl="A0" linkIndex="11" />
+    <connection from="B0A0" to="A0left0" fromLane="1" toLane="0" tl="A0" linkIndex="12" />
+    <connection from="B0A0" to="A0left0" fromLane="1" toLane="1" tl="A0" linkIndex="13" />
+    <connection from="B0A0" to="A0left0" fromLane="1" toLane="2" tl="A0" linkIndex="14" />
+    <connection from="B0A0" to="A0bottom0" fromLane="2" toLane="0" tl="A0" linkIndex="15" />
+    <connection from="B0A0" to="A0bottom0" fromLane="2" toLane="1" tl="A0" linkIndex="16" />
+    <connection from="B0A0" to="A0bottom0" fromLane="2" toLane="2" tl="A0" linkIndex="17" />
+    <connection from="B0B1" to="B1right1" fromLane="0" toLane="0" tl="B1" linkIndex="18" />
+    <connection from="B0B1" to="B1right1" fromLane="0" toLane="1" tl="B1" linkIndex="19" />
+    <connection from="B0B1" to="B1right1" fromLane="0" toLane="2" tl="B1" linkIndex="20" />
+    <connection from="B0B1" to="B1top1" fromLane="1" toLane="0" tl="B1" linkIndex="21" />
+    <connection from="B0B1" to="B1top1" fromLane="1" toLane="1" tl="B1" linkIndex="22" />
+    <connection from="B0B1" to="B1top1" fromLane="1" toLane="2" tl="B1" linkIndex="23" />
+    <connection from="B0B1" to="B1A1" fromLane="2" toLane="0" tl="B1" linkIndex="24" />
+    <connection from="B0B1" to="B1A1" fromLane="2" toLane="1" tl="B1" linkIndex="25" />
+    <connection from="B0B1" to="B1A1" fromLane="2" toLane="2" tl="B1" linkIndex="26" />
+    <connection from="B1A1" to="A1top0" fromLane="0" toLane="0" tl="A1" linkIndex="9" />
+    <connection from="B1A1" to="A1top0" fromLane="0" toLane="1" tl="A1" linkIndex="10" />
+    <connection from="B1A1" to="A1top0" fromLane="0" toLane="2" tl="A1" linkIndex="11" />
+    <connection from="B1A1" to="A1left1" fromLane="1" toLane="0" tl="A1" linkIndex="12" />
+    <connection from="B1A1" to="A1left1" fromLane="1" toLane="1" tl="A1" linkIndex="13" />
+    <connection from="B1A1" to="A1left1" fromLane="1" toLane="2" tl="A1" linkIndex="14" />
+    <connection from="B1A1" to="A1A0" fromLane="2" toLane="0" tl="A1" linkIndex="15" />
+    <connection from="B1A1" to="A1A0" fromLane="2" toLane="1" tl="A1" linkIndex="16" />
+    <connection from="B1A1" to="A1A0" fromLane="2" toLane="2" tl="A1" linkIndex="17" />
+    <connection from="B1B0" to="B0A0" fromLane="0" toLane="0" tl="B0" linkIndex="0" />
+    <connection from="B1B0" to="B0A0" fromLane="0" toLane="1" tl="B0" linkIndex="1" />
+    <connection from="B1B0" to="B0A0" fromLane="0" toLane="2" tl="B0" linkIndex="2" />
+    <connection from="B1B0" to="B0bottom1" fromLane="1" toLane="0" tl="B0" linkIndex="3" />
+    <connection from="B1B0" to="B0bottom1" fromLane="1" toLane="1" tl="B0" linkIndex="4" />
+    <connection from="B1B0" to="B0bottom1" fromLane="1" toLane="2" tl="B0" linkIndex="5" />
+    <connection from="B1B0" to="B0right0" fromLane="2" toLane="0" tl="B0" linkIndex="6" />
+    <connection from="B1B0" to="B0right0" fromLane="2" toLane="1" tl="B0" linkIndex="7" />
+    <connection from="B1B0" to="B0right0" fromLane="2" toLane="2" tl="B0" linkIndex="8" />
+    <connection from="top1B1" to="B1A1" fromLane="0" toLane="0" tl="B1" linkIndex="0" />
+    <connection from="top1B1" to="B1A1" fromLane="0" toLane="1" tl="B1" linkIndex="1" />
+    <connection from="top1B1" to="B1A1" fromLane="0" toLane="2" tl="B1" linkIndex="2" />
+    <connection from="top1B1" to="B1B0" fromLane="1" toLane="0" tl="B1" linkIndex="3" />
+    <connection from="top1B1" to="B1B0" fromLane="1" toLane="1" tl="B1" linkIndex="4" />
+    <connection from="top1B1" to="B1B0" fromLane="1" toLane="2" tl="B1" linkIndex="5" />
+    <connection from="top1B1" to="B1right1" fromLane="2" toLane="0" tl="B1" linkIndex="6" />
+    <connection from="top1B1" to="B1right1" fromLane="2" toLane="1" tl="B1" linkIndex="7" />
+    <connection from="top1B1" to="B1right1" fromLane="2" toLane="2" tl="B1" linkIndex="8" />
+    <connection from="right0B0" to="B0B1" fromLane="0" toLane="0" tl="B0" linkIndex="9" />
+    <connection from="right0B0" to="B0B1" fromLane="0" toLane="1" tl="B0" linkIndex="10" />
+    <connection from="right0B0" to="B0B1" fromLane="0" toLane="2" tl="B0" linkIndex="11" />
+    <connection from="right0B0" to="B0A0" fromLane="1" toLane="0" tl="B0" linkIndex="12" />
+    <connection from="right0B0" to="B0A0" fromLane="1" toLane="1" tl="B0" linkIndex="13" />
+    <connection from="right0B0" to="B0A0" fromLane="1" toLane="2" tl="B0" linkIndex="14" />
+    <connection from="right0B0" to="B0bottom1" fromLane="2" toLane="0" tl="B0" linkIndex="15" />
+    <connection from="right0B0" to="B0bottom1" fromLane="2" toLane="1" tl="B0" linkIndex="16" />
+    <connection from="right0B0" to="B0bottom1" fromLane="2" toLane="2" tl="B0" linkIndex="17" />
+    <connection from="right1B1" to="B1top1" fromLane="0" toLane="0" tl="B1" linkIndex="9" />
+    <connection from="right1B1" to="B1top1" fromLane="0" toLane="1" tl="B1" linkIndex="10" />
+    <connection from="right1B1" to="B1top1" fromLane="0" toLane="2" tl="B1" linkIndex="11" />
+    <connection from="right1B1" to="B1A1" fromLane="1" toLane="0" tl="B1" linkIndex="12" />
+    <connection from="right1B1" to="B1A1" fromLane="1" toLane="1" tl="B1" linkIndex="13" />
+    <connection from="right1B1" to="B1A1" fromLane="1" toLane="2" tl="B1" linkIndex="14" />
+    <connection from="right1B1" to="B1B0" fromLane="2" toLane="0" tl="B1" linkIndex="15" />
+    <connection from="right1B1" to="B1B0" fromLane="2" toLane="1" tl="B1" linkIndex="16" />
+    <connection from="right1B1" to="B1B0" fromLane="2" toLane="2" tl="B1" linkIndex="17" />
+    <connection from="bottom0A0" to="A0B0" fromLane="0" toLane="0" tl="A0" linkIndex="18" />
+    <connection from="bottom0A0" to="A0B0" fromLane="0" toLane="1" tl="A0" linkIndex="19" />
+    <connection from="bottom0A0" to="A0B0" fromLane="0" toLane="2" tl="A0" linkIndex="20" />
+    <connection from="bottom0A0" to="A0A1" fromLane="1" toLane="0" tl="A0" linkIndex="21" />
+    <connection from="bottom0A0" to="A0A1" fromLane="1" toLane="1" tl="A0" linkIndex="22" />
+    <connection from="bottom0A0" to="A0A1" fromLane="1" toLane="2" tl="A0" linkIndex="23" />
+    <connection from="bottom0A0" to="A0left0" fromLane="2" toLane="0" tl="A0" linkIndex="24" />
+    <connection from="bottom0A0" to="A0left0" fromLane="2" toLane="1" tl="A0" linkIndex="25" />
+    <connection from="bottom0A0" to="A0left0" fromLane="2" toLane="2" tl="A0" linkIndex="26" />
+    <connection from="bottom1B0" to="B0right0" fromLane="0" toLane="0" tl="B0" linkIndex="18" />
+    <connection from="bottom1B0" to="B0right0" fromLane="0" toLane="1" tl="B0" linkIndex="19" />
+    <connection from="bottom1B0" to="B0right0" fromLane="0" toLane="2" tl="B0" linkIndex="20" />
+    <connection from="bottom1B0" to="B0B1" fromLane="1" toLane="0" tl="B0" linkIndex="21" />
+    <connection from="bottom1B0" to="B0B1" fromLane="1" toLane="1" tl="B0" linkIndex="22" />
+    <connection from="bottom1B0" to="B0B1" fromLane="1" toLane="2" tl="B0" linkIndex="23" />
+    <connection from="bottom1B0" to="B0A0" fromLane="2" toLane="0" tl="B0" linkIndex="24" />
+    <connection from="bottom1B0" to="B0A0" fromLane="2" toLane="1" tl="B0" linkIndex="25" />
+    <connection from="bottom1B0" to="B0A0" fromLane="2" toLane="2" tl="B0" linkIndex="26" />
+    <connection from="left0A0" to="A0bottom0" fromLane="0" toLane="0" tl="A0" linkIndex="27" />
+    <connection from="left0A0" to="A0bottom0" fromLane="0" toLane="1" tl="A0" linkIndex="28" />
+    <connection from="left0A0" to="A0bottom0" fromLane="0" toLane="2" tl="A0" linkIndex="29" />
+    <connection from="left0A0" to="A0B0" fromLane="1" toLane="0" tl="A0" linkIndex="30" />
+    <connection from="left0A0" to="A0B0" fromLane="1" toLane="1" tl="A0" linkIndex="31" />
+    <connection from="left0A0" to="A0B0" fromLane="1" toLane="2" tl="A0" linkIndex="32" />
+    <connection from="left0A0" to="A0A1" fromLane="2" toLane="0" tl="A0" linkIndex="33" />
+    <connection from="left0A0" to="A0A1" fromLane="2" toLane="1" tl="A0" linkIndex="34" />
+    <connection from="left0A0" to="A0A1" fromLane="2" toLane="2" tl="A0" linkIndex="35" />
+    <connection from="left1A1" to="A1A0" fromLane="0" toLane="0" tl="A1" linkIndex="27" />
+    <connection from="left1A1" to="A1A0" fromLane="0" toLane="1" tl="A1" linkIndex="28" />
+    <connection from="left1A1" to="A1A0" fromLane="0" toLane="2" tl="A1" linkIndex="29" />
+    <connection from="left1A1" to="A1B1" fromLane="1" toLane="0" tl="A1" linkIndex="30" />
+    <connection from="left1A1" to="A1B1" fromLane="1" toLane="1" tl="A1" linkIndex="31" />
+    <connection from="left1A1" to="A1B1" fromLane="1" toLane="2" tl="A1" linkIndex="32" />
+    <connection from="left1A1" to="A1top0" fromLane="2" toLane="0" tl="A1" linkIndex="33" />
+    <connection from="left1A1" to="A1top0" fromLane="2" toLane="1" tl="A1" linkIndex="34" />
+    <connection from="left1A1" to="A1top0" fromLane="2" toLane="2" tl="A1" linkIndex="35" />
+</tlLogics>

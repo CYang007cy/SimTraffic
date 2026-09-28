@@ -1,0 +1,8 @@
+<viewsettings>
+    <scheme name="real world">
+        <pois poi_minSize="0.00" poi_exaggeration="1.00" poi_constantSize="1"
+              poiName_show="0" poiType_show="1" poiType_size="38.00"
+              poiType_color="black" poiType_bgColor="190,255,255,255"
+              poiType_constantSize="1"/>
+    </scheme>
+</viewsettings>

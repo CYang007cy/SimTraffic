@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<nodes>
+    <node id="A0" x="300.00" y="300.00" type="traffic_light_right_on_red" tl="A0" />
+    <node id="A1" x="300.00" y="600.00" type="traffic_light_right_on_red" tl="A1" />
+    <node id="top0" x="300.00" y="900.00" type="dead_end" fringe="outer" />
+    <node id="B0" x="600.00" y="300.00" type="traffic_light_right_on_red" tl="B0" />
+    <node id="B1" x="600.00" y="600.00" type="traffic_light_right_on_red" tl="B1" />
+    <node id="top1" x="600.00" y="900.00" type="dead_end" fringe="outer" />
+    <node id="right0" x="900.00" y="300.00" type="dead_end" fringe="outer" />
+    <node id="right1" x="900.00" y="600.00" type="dead_end" fringe="outer" />
+    <node id="bottom0" x="300.00" y="0.00" type="dead_end" fringe="outer" />
+    <node id="bottom1" x="600.00" y="0.00" type="dead_end" fringe="outer" />
+    <node id="left0" x="0.00" y="300.00" type="dead_end" fringe="outer" />
+    <node id="left1" x="0.00" y="600.00" type="dead_end" fringe="outer" />
+</nodes>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<nodes>
+    <node id="A0" x="300.00" y="300.00" type="traffic_light_right_on_red" tl="A0" />
+    <node id="A1" x="300.00" y="600.00" type="traffic_light_right_on_red" tl="A1" />
+    <node id="A2" x="300.00" y="900.00" type="traffic_light_right_on_red" tl="A2" />
+    <node id="top0" x="300.00" y="1200.00" type="dead_end" fringe="outer" />
+    <node id="B0" x="600.00" y="300.00" type="traffic_light_right_on_red" tl="B0" />
+    <node id="B1" x="600.00" y="600.00" type="traffic_light_right_on_red" tl="B1" />
+    <node id="B2" x="600.00" y="900.00" type="traffic_light_right_on_red" tl="B2" />
+    <node id="top1" x="600.00" y="1200.00" type="dead_end" fringe="outer" />
+    <node id="C0" x="900.00" y="300.00" type="traffic_light_right_on_red" tl="C0" />
+    <node id="C1" x="900.00" y="600.00" type="traffic_light_right_on_red" tl="C1" />
+    <node id="C2" x="900.00" y="900.00" type="traffic_light_right_on_red" tl="C2" />
+    <node id="top2" x="900.00" y="1200.00" type="dead_end" fringe="outer" />
+    <node id="right0" x="1200.00" y="300.00" type="dead_end" fringe="outer" />
+    <node id="right1" x="1200.00" y="600.00" type="dead_end" fringe="outer" />
+    <node id="right2" x="1200.00" y="900.00" type="dead_end" fringe="outer" />
+    <node id="bottom0" x="300.00" y="0.00" type="dead_end" fringe="outer" />
+    <node id="bottom1" x="600.00" y="0.00" type="dead_end" fringe="outer" />
+    <node id="bottom2" x="900.00" y="0.00" type="dead_end" fringe="outer" />
+    <node id="left0" x="0.00" y="300.00" type="dead_end" fringe="outer" />
+    <node id="left1" x="0.00" y="600.00" type="dead_end" fringe="outer" />
+    <node id="left2" x="0.00" y="900.00" type="dead_end" fringe="outer" />
+</nodes>

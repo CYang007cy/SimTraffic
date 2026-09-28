@@ -1,0 +1,437 @@
+{
+    "colors_map": {
+        "Max Pressure": "C3",
+        "IDQN": "C0",
+        "Fixed Time": "C1",
+        "MPLight": "C2",
+        "Advanced-MPLight": "C4",
+        "Parameter Reset": "C5"
+    },
+    "names_map": {
+        "timeLoss": "Average Delay",
+        "duration": "Average Travel Time",
+        "waitingTime": "Average Waiting Time",
+        "rewards": "Reward",
+        "max_queues": "Max Queue Length",
+        "queue_lengths": "Average Queue Length",
+        "vehicles": "Demand",
+        "phase_length": "Phase Length",
+        "yaxis_timeLoss": "Delay (s)",
+        "yaxis_duration": "Travel Time (s)",
+        "yaxis_waitingTime": "Waiting Time (s)",
+        "yaxis_rewards": "Reward total",
+        "yaxis_max_queues": "Queue length",
+        "yaxis_queue_lengths": "Queue length",
+        "yaxis_vehicles": "Vehicles (vpm)",
+        "cologne1": "Cologne Single",
+        "cologne3": "Cologne Corridor",
+        "cologne8": "Cologne Region",
+        "ingolstadt1": "Ingolstadt Single",
+        "ingolstadt7": "Ingolstadt Corridor",
+        "ingolstadt21": "Ingolstadt Region",
+        "saltlake2_stateXuniversity": "Univ & State - 2023 Q1",
+        "saltlake2_stateXuniversity#signals@['A3']": "Univ & State - 2023 Q1 - West Signal",
+        "saltlake2_stateXuniversity#signals@['B3']": "Univ & State - 2023 Q1 - East Signal",
+        "saltlake2_400sX200w": "400S & 200W - 2023 Q1",
+        "saltlake2_400sX200w#signals@['A3']": "400S & 200W - 2023 Q1 - West Signal",
+        "saltlake2_400sX200w#signals@['B3']": "400S & 200W - 2023 Q1 - East Signal",
+        "FIXED": "Fixed time",
+        "MAXWAVE": "Max wave",
+        "MAXPRESSURE": "Max pressure",
+        "RLCD": "RL-CD",
+        "AdvancedMPLight": "Advanced-MPLight",
+        "IMultiDQN": "DARTS",
+        "init_time": "H",
+        "sample_time": "W",
+        "model_buffer_size": "n",
+        "deviations": "\u03c3",
+        "fixed_buffer": "Fixed",
+        "parameter_reset_freq": "Reset",
+        "buffer_size": "Buffer",
+        "action_set": "Actions",
+        "fasttrac": "Fast TRAC",
+        "crelu": "CReLU",
+        "global_buffers": "Global",
+        "blank_params": {
+            "IMultiDQN": [
+                "criteria",
+                "expert"
+            ],
+            "ISAC": [
+                "cl_method"
+            ]
+        },
+        "relevant_params": {
+            "IDQN": [
+                "fasttrac",
+                "crelu",
+                "parameter_reset_freq",
+                "buffer_size"
+            ],
+            "RLCD": [
+                "action_set"
+            ],
+            "ISAC": [
+                "cl_method"
+            ],
+            "IMultiDQN": [
+                "criteria",
+                [
+                    "criteria",
+                    "!std&!kstest&!oracle_vehicles",
+                    [
+                        "fallback"
+                    ]
+                ],
+                [
+                    "criteria",
+                    "std",
+                    [
+                        "global_buffers",
+                        "expert",
+                        "init_time",
+                        "sample_time",
+                        "deviations",
+                        "model_buffer_size",
+                        "fixed_buffer"
+                    ]
+                ],
+                [
+                    "criteria",
+                    "kstest",
+                    [
+                        "expert",
+                        "init_time",
+                        "sample_time",
+                        "p_value",
+                        "model_buffer_size",
+                        "fixed_buffer"
+                    ]
+                ]
+            ]
+        },
+        "text_values": {
+            "std": "Std Dev",
+            "kstest": "K-S Test"
+        }
+    },
+    "controlled_signals": null,
+    "uncontrolled_policy": "MAXPRESSURE",
+    "action_set": "Phase",
+    "episodes": 1,
+    "converged": null,
+    "log_dir": "C:\\Users\\Lenovo\\Desktop\\\u4ea4\u901a\u5927\u6a21\u578b\u9879\u76ee\\sumu\u4eff\u771f\\RESCO\\results",
+    "gui": true,
+    "libsumo": false,
+    "load_sim": null,
+    "save_model": false,
+    "save_frequency": 20,
+    "load_model": null,
+    "load_replay": true,
+    "training": true,
+    "testing": 0,
+    "flow": 1.0,
+    "curriculum": null,
+    "max_distance": 200,
+    "step_length": 5,
+    "yellow_length": 3,
+    "clearance_length": 2,
+    "step_ratio": 1,
+    "run_hour": null,
+    "clean_nightly": null,
+    "log_level": "INFO",
+    "save_console_log": false,
+    "delete_episode_logs": true,
+    "seed": null,
+    "gpu": 0,
+    "flat_state": true,
+    "script_launcher": true,
+    "processors": 4,
+    "trials": 5,
+    "optuna_objective": null,
+    "optuna_trials": 1000,
+    "error_bars": true,
+    "smoothing": null,
+    "xml_metrics": [
+        "timeLoss",
+        "duration",
+        "waitingTime"
+    ],
+    "csv_metrics": [
+        "rewards",
+        "max_queues",
+        "queue_lengths",
+        "vehicles",
+        "phase_length"
+    ],
+    "directions": [
+        "S-W",
+        "S-S",
+        "S-E",
+        "W-N",
+        "W-W",
+        "W-S",
+        "N-E",
+        "N-N",
+        "N-W",
+        "E-S",
+        "E-E",
+        "E-N"
+    ],
+    "phase_pairs": [
+        [
+            "S-S",
+            "N-N"
+        ],
+        [
+            "S-E",
+            "N-W"
+        ],
+        [
+            "S-S",
+            "S-E"
+        ],
+        [
+            "N-N",
+            "N-W"
+        ],
+        [
+            "W-W",
+            "E-E"
+        ],
+        [
+            "W-S",
+            "E-N"
+        ],
+        [
+            "E-E",
+            "E-N"
+        ],
+        [
+            "W-W",
+            "W-S"
+        ],
+        [
+            "E-S",
+            "E-N"
+        ]
+    ],
+    "pair_to_act_map": {
+        "cluster_2415878664_254486231_359566_359576": {
+            "4": 0,
+            "5": 1,
+            "0": 2,
+            "1": 3
+        },
+        "360086": {
+            "4": 0,
+            "5": 1,
+            "0": 2,
+            "1": 3
+        },
+        "360082": {
+            "4": 0,
+            "5": 1,
+            "1": 2
+        }
+    },
+    "cluster_2415878664_254486231_359566_359576": {
+        "lane_sets": {
+            "S-W": [
+                "319261593#16_0"
+            ],
+            "S-S": [
+                "319261593#16_1",
+                "319261593#16_0"
+            ],
+            "S-E": [
+                "319261593#16_1"
+            ],
+            "W-N": [
+                "-241660955#3_0"
+            ],
+            "W-W": [
+                "-241660955#3_0",
+                "-241660955#3_1"
+            ],
+            "W-S": [
+                "-241660955#3_1"
+            ],
+            "N-E": [
+                "241660957#0_0"
+            ],
+            "N-N": [
+                "241660957#0_0",
+                "241660957#0_1"
+            ],
+            "N-W": [
+                "241660957#0_1"
+            ],
+            "E-S": [
+                "200818108#0_0"
+            ],
+            "E-E": [
+                "200818108#0_0",
+                "200818108#0_1"
+            ],
+            "E-N": [
+                "200818108#0_1"
+            ]
+        },
+        "downstream": {
+            "N": null,
+            "E": "360086",
+            "S": null,
+            "W": null
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "360086": {
+        "lane_sets": {
+            "S-W": [
+                "4045329#5_0"
+            ],
+            "S-S": [
+                "4045329#5_0"
+            ],
+            "S-E": [
+                "4045329#5_0"
+            ],
+            "W-N": [
+                "-241660955#10_0"
+            ],
+            "W-W": [
+                "-241660955#10_1",
+                "-241660955#10_0"
+            ],
+            "W-S": [
+                "-241660955#10_1"
+            ],
+            "N-E": [
+                "-41910185#2_0"
+            ],
+            "N-N": [
+                "-41910185#2_0"
+            ],
+            "N-W": [
+                "-41910185#2_0"
+            ],
+            "E-S": [
+                "241660955#7_0"
+            ],
+            "E-E": [
+                "241660955#7_0",
+                "241660955#7_1"
+            ],
+            "E-N": [
+                "241660955#7_1"
+            ]
+        },
+        "downstream": {
+            "N": null,
+            "E": "360082",
+            "S": null,
+            "W": "cluster_2415878664_254486231_359566_359576"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "360082": {
+        "lane_sets": {
+            "S-W": [],
+            "S-S": [],
+            "S-E": [],
+            "W-N": [],
+            "W-W": [
+                "-241660955#17_1",
+                "-241660955#17_0"
+            ],
+            "W-S": [
+                "-241660955#17_1"
+            ],
+            "N-E": [
+                "-130160207#0_0"
+            ],
+            "N-N": [
+                "-130160207#0_0"
+            ],
+            "N-W": [
+                "-130160207#0_0"
+            ],
+            "E-S": [
+                "241660955#14_0"
+            ],
+            "E-E": [
+                "241660955#14_0",
+                "241660955#14_1"
+            ],
+            "E-N": [
+                "241660955#14_1"
+            ]
+        },
+        "downstream": {
+            "N": null,
+            "E": null,
+            "S": null,
+            "W": "360086"
+        },
+        "fixed_timings": [
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2
+        ],
+        "fixed_phase_order_idx": 0
+    },
+    "management": {
+        "top_mgr": [
+            "360082",
+            "360086"
+        ],
+        "bot_mgr": [
+            "cluster_2415878664_254486231_359566_359576"
+        ]
+    },
+    "management_neighbors": {
+        "top_mgr": [
+            "bot_mgr"
+        ],
+        "bot_mgr": [
+            "top_mgr"
+        ]
+    },
+    "network": "cologne3.net.xml",
+    "route": "cologne3.rou.xml",
+    "start_time": 25200,
+    "end_time": 28800,
+    "module": "static.fixed",
+    "state": "wave",
+    "reward": "wait",
+    "benchmark_path": "C:\\Users\\Lenovo\\Desktop\\\u4ea4\u901a\u5927\u6a21\u578b\u9879\u76ee\\sumu\u4eff\u771f\\RESCO",
+    "map": "cologne3",
+    "algorithm": "FIXED",
+    "uuid": "64812cdd-6307-4186-b445-ffb9f7b484dd"
+}
